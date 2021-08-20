@@ -10,7 +10,7 @@ type Doggie = {
 
 const DoggiesList: React.FC<{ doggies: Doggie[] }> = ({ doggies }) => {
   return (
-    <div className="doggies">
+    <div data-testid="app-doggie-list" className="doggies">
       <div className="doggies__results">
         <h3 className="doggies__results--text">Results found {doggies.length}</h3>
       </div>

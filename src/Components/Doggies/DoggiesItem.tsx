@@ -8,7 +8,7 @@ type Doggie = {
 
 const DoggieItem: React.FC<{ doggie: Doggie }> = ({ doggie }) => {
   return (
-    <div className="doggiesItem">
+    <div data-testid="app-doggie-item" className="doggiesItem">
       <img className="doggiesItem__img" src={doggie.url} alt="dog" />
     </div>
   );

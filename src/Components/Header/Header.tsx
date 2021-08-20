@@ -6,7 +6,7 @@ import './Header.scss';
 
 const Header: React.FC = () => {
   return (
-    <div className="header">
+    <div data-testid="app-header" className="header">
       <div className="header__wrap">
         <img className="header__img" src={DogLogo} alt="dog api logo" />
       </div>

@@ -13,7 +13,7 @@ const InputForm: React.FC<{ handleSubmit: (breed: string) => void }> = ({
   };
 
   return (
-    <div className="form__container">
+    <div data-testid="app-inputForm" className="form__container">
       <div className="form__wrap">
         <div className="form">
           <input
