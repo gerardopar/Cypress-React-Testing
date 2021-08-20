@@ -5,8 +5,6 @@ import DoggieItem from "./DoggiesItem";
 import "./Doggies.scss";
 
 type Doggie = {
-  id?: string;
-  name?: string;
   url?: string;
 };
 

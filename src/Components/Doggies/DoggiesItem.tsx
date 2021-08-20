@@ -3,8 +3,6 @@ import React from "react";
 import './Doggies.scss';
 
 type Doggie = {
-  id?: string;
-  name?: string;
   url?: string;
 };
 
