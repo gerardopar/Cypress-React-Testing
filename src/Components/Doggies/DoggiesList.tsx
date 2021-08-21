@@ -12,10 +12,10 @@ const DoggiesList: React.FC<{ doggies: Doggie[] }> = ({ doggies }) => {
   return (
     <div data-testid="app-doggie-list" className="doggies">
       <div className="doggies__results">
-        <h3 className="doggies__results--text">Results found {doggies.length}</h3>
+        <h3 data-testid="app-doggie-result-text" className="doggies__results--text">Results found {doggies.length}</h3>
       </div>
 
-      <div className="doggies__wrap">
+      <div data-testid="app-doggies" className="doggies__wrap">
         {doggies.length > 0 ? (
           doggies.map((doggie) => <DoggieItem doggie={doggie} />)
         ) : (
