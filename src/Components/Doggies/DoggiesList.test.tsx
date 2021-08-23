@@ -23,5 +23,7 @@ it("Contains doggos result.length", () => {
   cy.get("[data-testid=app-doggie-result-text]").contains(
     `Results found ${doggos.length}`
   ); // Results found 2
-  cy.get('[data-testid="app-doggies"]').children().should("have.length", 2); // 2
+  cy.get('[data-testid="app-doggies"]')
+    .children()
+    .should("have.length", doggos.length); // 2
 });
